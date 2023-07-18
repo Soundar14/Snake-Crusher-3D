@@ -26,7 +26,7 @@ public class SnakeController : Singleton<SnakeController>
 
         positionsHistory.Insert(0, transform.position);
 
-        int indexCounter = 0;
+        int indexCounter = 1;
         foreach(Transform t in bodyParts_T)
         {
 
