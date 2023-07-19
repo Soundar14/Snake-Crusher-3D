@@ -10,7 +10,7 @@ public class Crusher : Singleton<Crusher>
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hey..");
+        //Debug.Log("Hey..");
         if (other.CompareTag("Body"))
         {
             canCrush = true;

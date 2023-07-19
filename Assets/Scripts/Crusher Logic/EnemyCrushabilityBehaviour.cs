@@ -11,9 +11,12 @@ public class EnemyCrushabilityBehaviour : MonoBehaviour
         if (other.CompareTag("Body") && Crusher.Instance.canCrush)
         {
             Debug.LogWarning(other.ToString());
-            Destroy(this.gameObject);
+            Destroy(this.gameObject);            
+            GameManager.Instance.UpdateScore();
         }
 
         
     }
+
+    
 }
